@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassets</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Кассеты</h1>
+        <div class="button-container">
+            <button class="button" onclick="addCassette()">Добавить кассету</button>
+            <button class="button" onclick="removeCassette()">Удалить кассету</button>
+        </div>
+        <div class="exchange">
+            <input class="exchange-input" type="number" placeholder="Введите сумму в рублях" min="0">
+            <button class="button" onclick="exchange()">Выдать</button>
+        </div>
+        <div class="cassettes">
+            <div class="cassette-grid">
+                <div class="cassette">
+                    <img class="cassette-icon" src="./img/1.png" alt="Кассета">
+                    <h3 class="cassette-title">Название кассеты</h3>
+                    <p class="cassette-status">Статус: исправна</p>
+                    <p class="cassette-value">Номинал: 100</p>
+                    <p class="cassette-quantity">Количество: 99</p>
+                    <img class="settings-icon" src="./img/settings.png" alt="Настройки кассеты" onclick="showSettings(this)">
+                </div>
+            </div>
+        </div>
+        <div class="settings">
+            <h3 class="settings-title">Настройка кассеты</h3>
+            <div class="settings-cassette-title">Название кассеты</div>
+            <input class="settings-cassette-title-input" type="text" placeholder="Введите название кассеты">
+            <div class="settings-cassette-status">Статус кассеты</div>
+            <select class="settings-cassette-status-select" value="value">
+                <option value="исправна">Исправна</option>
+                <option value="неисправна">Неисправна</option>
+            </select>
+            <div class="settings-cassette-value">Номинал кассеты</div>
+            <select class="settings-cassette-value-select" value="value">
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+                <option value="2000">2000</option>
+                <option value="5000">5000</option>
+            </select>
+            <div class="settings-cassette-quantity">Количество кассет</div>
+            <input class="settings-cassette-quantity-input" type="number" placeholder="Введите количество кассет" min="0">
+            <button class="settings-save-button" onclick="saveSettings()">Сохранить</button>
+        </div>
+        
+        
+    </div>
+    <script src="./js/script.js" defer></script>
+</body>
+</html>

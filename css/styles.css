@@ -1,0 +1,126 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.button {
+    margin-right: 10px;
+}
+
+.cassettes {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.cassette-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    max-width: calc(400px * 4 + 10px * 3);
+    padding: 20px;
+}
+
+.cassette {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.cassette-icon {
+    width: 70%;
+    height: 50%;
+}
+
+.cassette-title,
+.cassette-status,
+.cassette-value,
+.cassette-quantity {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.settings-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 30px;
+    height: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    z-index: 2;
+}
+
+.settings {
+    top: 25%;
+    width: 40%;
+    height: 50%;
+    background-color: #ccc;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 3;
+    justify-content: center;
+    text-align: center;
+}
+
+.settings input,
+.settings select {
+    width: 90%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0 auto; 
+    margin-bottom: 10px;
+}
+
+
+.settings-title {
+    text-align: center;
+    width: 100%; 
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    top: 0; 
+
+    margin-bottom: 20px;
+}
+
+.settings-cassette-title,
+.settings-cassette-status,
+.settings-cassette-value,
+.settings-cassette-quantity {
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+
+.settings-save-button {
+    display: block; 
+    margin: 0 auto;
+    margin-top: 10px; 
+}
